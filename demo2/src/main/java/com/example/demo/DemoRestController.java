@@ -43,6 +43,7 @@ public class DemoRestController {
 		httpHeader.setContentType(MediaType.APPLICATION_JSON);
 		httpHeader.add("Trainer-Name", "Srinivas Dande");
 		httpHeader.set("course-name", "Java full stack");
+		httpHeader.add("Student-Name", "Radhika");
 		RestTemplate restTemplate = new RestTemplate();
 		
 		HttpEntity httpEntity = new HttpEntity<>(httpHeader);
